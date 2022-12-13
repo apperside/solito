@@ -26,7 +26,7 @@ export type SolitoImageProps = Pick<
   | 'quality'
 > & {
   // TODO extract resize mode, object fit
-  style?: ImageStyle
+  style?: ImageStyle & { objectFit: 'cover' | 'contain' }
 } & (
     | {
         src: string
